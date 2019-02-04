@@ -98,6 +98,10 @@ header a:hover{
 #showcase p{
 	font-size: 20px;
 }
+
+
+/* News letter where I made the title float to the left and the form to the right, 
+ I also changed the color of the button, and removed boarders from the button*/
 #newsletter {
 	padding:15px;
 	color:#ffffff;
@@ -116,3 +120,33 @@ header a:hover{
 	width: 250px;
 }
 
+/* Styling of the boxes */ 
+
+#imageboxes {
+	margin-top: 20px;
+
+}
+
+#imageboxes .box{
+
+	float: left;
+	width: 30%;
+	text-align: center;
+	padding: 10px;
+}
+
+#imageboxes .box img{
+
+	width: 90px;
+
+}
+
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color:#ffffff;
+	background-color: #e8491d;
+	text-align: center;
+
+}
