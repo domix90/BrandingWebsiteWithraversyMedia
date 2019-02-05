@@ -159,12 +159,28 @@ aside#sidebar {
 	margin-top: 10px;
 }
 
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+	width:90%;
+	padding:5px;
+
+} 
+
 /* Main col */
 
 article#main-col {
 
 	float:left;
 	width: 65%;
+}
+
+/*Services Page */
+
+ul#services li {
+
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 0.5px;
+	margin-bottom: 5px;
 }
 
 footer {
@@ -175,3 +191,46 @@ footer {
 	text-align: center;
 
 }
+
+
+/* Media Queries which allows us to select group of CSS 
+that will only work if the screen is at a certain width */
+
+@media (max-width: 768px) {
+	header #branding,
+	header nav,
+	header nav li,
+	#newsletter h1,
+	#newsletter form,
+	#newsletter button,
+	#imageboxes .box,
+	article#main-col,
+	aside#sidebar {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	header {
+		padding-bottom: 20px;
+	}
+
+	#showcase h1 {
+
+		margin-top: 40px;
+	}
+
+	.newsletter_button button, .quote button  {
+
+		display:block;
+		width:100%;
+	}
+
+	#newsletter form input[type="email"], .quote input, .quote textarea {
+		width:100%;
+		margin-bottom:5px;
+
+	}
+
+}
+
